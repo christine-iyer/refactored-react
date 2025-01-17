@@ -119,6 +119,17 @@ export default function CreateForm(){
                onChange={(e)=> setTargetQuantity(e.target.value)}
                required
                />
+               <input
+               type="checkbox"
+               checked={newPlant}
+               onChange={(e)=> setNewPlant(e.target.checked)}
+               />
+               <input
+               type="text"
+               placeholder="Plant Origin"
+               value={plantOrigin}
+               onChange={(e)=> setPlantOrigin(e.target.value)}
+               />
           </form>
      )
      
